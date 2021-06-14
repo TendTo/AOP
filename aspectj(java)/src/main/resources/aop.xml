@@ -1,0 +1,11 @@
+<aspectj>
+    <aspects>
+        <aspect name="com.tend.aspect.AccountAspect"/>
+    </aspects>
+    <weaver options="-verbose">
+        <!-- weave anything -->
+        <include within="*" />
+        <!-- weave specific packages only
+        <include within="com.tend.aspect.*" /> -->
+    </weaver>    
+</aspectj>
